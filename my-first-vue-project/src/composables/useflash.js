@@ -1,7 +1,7 @@
 import swal from "sweetalert";
 export function useflash() {
-    function flash(message) {
-        return swal('Sucess!', message, 'success');
+    function flash(title, message, level) {
+        return swal(title , message, level);
     }
 
     return { flash };
